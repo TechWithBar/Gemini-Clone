@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+}
+
+#root{
+  min-height: 100vh;
+  display: flex;
+  animation: fadeIn 1.2s;
+  --nav-color: #585858;
+  --greet-color: #c4c7c5;
+  --card-color: #f0f4f9;
+  --card-img-color: white;
+  --card-p-color: #585858;
+  --card-hover-color: #dfe4ea;
+  --search-box-color: #f0f4f9;
+  --sidebar-color: #f0f4f9;
+  --menu-color: #dfe4ea;
+  --new-chat-color: #dfe4ea;
+  --new-chat-hover-color: #d2d5da;
+  --new-chet-text-color: #666565;
+  --recent-entry-color: #282828;
+  --recent-entry-hover-color: #e2e6eb;
+}
+
+[data-theme="dark"] {
+  --nav-color: #303030;
+  --greet-color: #3d3d3d;
+  --card-color: #303030;
+  --card-img-color: #181818;
+  --card-p-color: #f5f5f5;
+  --card-hover-color: #525252be;
+  --search-box-color: #303030;
+  --sidebar-color: #303030;
+  --new-chat-color: #202020;
+  --new-chat-hover-color: #383838;
+  --new-chet-text-color: #3b3b3b;
+  --recent-entry-color: #045d91;
+  --recent-entry-hover-color: #0073b6;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
